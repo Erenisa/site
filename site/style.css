@@ -1,0 +1,457 @@
+html{
+height:100%;
+}
+body {
+	background-color: #fdffe2 ;
+	margin:0px;
+	height:100%;
+	flex-direction:column;
+	min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+p, h1, h2, h3 { margin:0;}
+
+.wrapper {
+	width: 1440px;
+	/*border: 1px solid red;*/
+}
+
+img {
+  border-radius: 10px; 
+   }
+
+/*шапка*/
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-family:Segoe Script ;
+		font-size:18pt ;
+		padding-left: 10px;
+		padding-right: 20px;
+		background-color:#e29e9a;
+}
+/*логотип*/
+.textcontainer {
+	display: flex;
+}
+/*настрока Главная, Гипсофилы, Розы, Пионы, поиск*/
+.header_nav_a {
+	font-family:Garamond;
+	font-weight: bold;
+	font-size:20pt ;
+	text-decoration: none;
+	color: black;
+	padding-left: 100px;
+	padding-right: 50px;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-bottom: 100px;
+}
+/*контент*/
+	
+/*меню (расположение)(одежда, пиджаки, толстовки...)*/
+.menu {
+	display: flex;
+	flex-direction: column;
+	width: 450px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+/*фотки с товаром*/
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+/*рамка у товаров*/
+.content_a {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #8d8d8d;
+	background: #feffee;
+    border-radius: 8px;
+    margin: 2px;
+    margin-bottom: 10px;
+}
+
+/*хз что это*/
+.content_text {
+	display: flex;
+	flex-direction: column;
+	font-size: 20px;
+	margin-left: 50px;
+}
+/*настройка менюшки (только слово Одежда)*/
+.content_text_h2 {
+	color: black;
+	font-family: Garamond;
+	font-size: 30pt;
+	margin-top:10pt ;
+
+}
+/*настрока менюшки (пиджаки и куртки, толстовки...)*/
+.content_text_h3 {
+	color: black;
+	font-family: Garamond;
+	font-size: 15pt;
+	margin-top:10pt;
+	padding-left:10px;
+}
+/*хз что это*/
+.content_text_p1 {
+	color: black;
+	padding-top:15px;
+	font-family:Garamond;
+
+}
+/*настройка размера фоток товара*/
+.content_Gypsophiles1 {
+	height:400px;
+	width:400;
+	margin: 8px;
+
+}
+
+/*настройка текста цен и названия цветов*/
+.content_text_flowers{
+	font-family:Garamond;
+	font-size:18pt;
+}
+
+/*настройка логотипа(фото)*/
+.content_imglogo {
+	height:80px;
+	padding-left:5px;
+ }
+ /*настройка фотки корзина*/
+ .content_imgbasket {
+	height:50px;
+	float:left;
+	padding-left:10px;
+	padding-bottom:10px;
+	padding-top:12px;
+ }
+ /*настрока фотки пользователь*/
+.content_imguser {
+	height:50px;
+	float:left;
+	padding-left:30px;
+	padding-bottom:10px;
+	padding-top:12px;
+
+ }
+/*футер*/
+	footer {
+		display: flex;
+		justify-content: center;
+		font-family:Garamond ;
+		font-size:18pt ;
+		padding-left: 40px;
+		padding-right: 20px;
+		background-color:#878787;
+		
+}
+/*настройка футера ""*/
+.footer {
+	display: flex;
+	justify-content: left;
+	margin-right:850; 
+	margin-left:270;
+}
+/*настрока фотки инстаграмм*/
+.content_img2 {
+	height:50px;
+	justify-content: left;
+ 	padding-left:10px;
+ 	padding-bottom:10px;
+ 	padding-top:12px;
+}
+
+
+/*натсройка фотки вконтакте*/
+.content_img3 {
+	height:50px;
+	justify-content: left;
+	padding-left:10px;
+	padding-bottom:10px;
+	padding-top:12px;
+	margin-left: 10px;
+ 	
+}
+/*настрока фотки фейсбук*/
+.content_img4 {
+	height:50px;
+	justify-content: left;
+	padding-left:10px;
+	padding-bottom:10px;
+	padding-top:12px;
+}
+/*натсрока фотки пинтерест*/
+.content_img5 {
+	height:50px;
+	justify-content: left;
+	padding-left:10px;
+	padding-bottom:10px;
+	padding-top:12px;
+	margin-left: 10px;
+}
+
+/*поисковая строка*/
+{box-sizing: border-box;}
+
+
+input {
+  border-radius: 42px;
+  border: 2px solid #8d8d8d;
+  background: #F9F0DA;
+  outline: none;
+  position: relative;
+  transition: .3s linear;
+  font-size: 17px;
+}
+
+
+button:before{
+  content: "\f002";
+  font-family: FontAwesome;
+  color: #324b4e;
+}
+
+/*настройка "расположение магазина"*/
+.content_b{
+	display: flex;
+	flex-direction: column;
+  display: flex;
+	justify-content: right;
+	padding-left: 100px;
+}
+
+body .textcontainer {
+  padding: 40px 0;
+  text-align: center;
+}
+body .particletext {
+  text-align: center;
+  font-size: 48px;
+  position: relative;
+}
+body .particletext.confetti > .particle {
+  opacity: 0;
+  position: absolute;
+  -webkit-animation: confetti 3s ease-in infinite;
+          animation: confetti 3s ease-in infinite;
+}
+body .particletext.confetti > .particle.c1 {
+  background-color: rgba(76, 175, 80, 0.5);
+}
+body .particletext.confetti > .particle.c2 {
+  background-color: rgba(156, 39, 176, 0.5);
+}
+
+@-webkit-keyframes confetti {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0%) rotate(0deg);
+            transform: translateY(0%) rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  35% {
+    -webkit-transform: translateY(-800%) rotate(270deg);
+            transform: translateY(-800%) rotate(270deg);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(2000%) rotate(1440deg);
+            transform: translateY(2000%) rotate(1440deg);
+  }
+}
+@keyframes confetti {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0%) rotate(0deg);
+            transform: translateY(0%) rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  35% {
+    -webkit-transform: translateY(-800%) rotate(270deg);
+            transform: translateY(-800%) rotate(270deg);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(2000%) rotate(1440deg);
+            transform: translateY(2000%) rotate(1440deg);
+  }
+}
+
+#slow_nav > ul{
+    width: 500px;
+    margin:25px auto 0;
+}
+ 
+#slow_nav > ul > li{
+    list-style: none;
+    display: inline-block;
+    position:relative;
+    padding:0;
+}
+ 
+#slow_nav a{text-decoration:none;}
+ 
+#slow_nav > ul > li > a{
+    font-size:28px;
+    padding:5px;
+    background-color:#fff;
+    color:#333;
+}
+ 
+#slow_nav li ul{
+    position:absolute;
+    list-style:none;
+    text-align:center;
+    top:15px;
+    font-size:24px;
+    left:0;
+    margin:0;
+    padding:0;
+    display:none;
+}
+ 
+#slow_nav li ul li{
+    background-color:#fff;
+    border-bottom:1px solid #888;
+}
+ 
+#slow_nav li ul li:last-child{
+    border-bottom:none;
+}
+ 
+#slow_nav li ul li a{
+    padding:5px 12px;
+    color:#333;
+    display:block;
+}
+ 
+#slow_nav li ul li:hover{
+    background-color:#bbbbbb;
+}
+ 
+#slow_nav li ul li:first-child{
+    margin-top:25px;
+    position:relative;
+}
+ 
+#slow_nav li ul li:first-child:before{
+    content:'';
+    position:absolute;
+    width:1px;
+    height:1px;
+    border:5px solid transparent;
+    border-bottom-color:#333;
+    left:10px;
+    top:-10px;
+}
+
+li{
+	list-style: none;
+}
+nav{
+	text-align: center;
+	font-family:Segoe Script;
+	font-size:18pt ;
+	padding-left: 10px;
+	padding-right: 20px;
+	margin-top: 50px;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] { 
+  padding: 15px;
+  display: inline-block;
+  border: none;
+  background: #F9F0DA;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+table {
+font-family: Segoe Script ;
+font-size: 24px;
+border-collapse: collapse;
+text-align: center;
+}
+th, td:first-child {
+background: #d97a75;
+color: black;
+padding: 10px 20px;
+}
+th, td {
+border-style: solid;
+border-width: 0 1px 1px 0;
+border-color: black;
+}
+td {
+background: #e3a19d;
+}
+th:first-child, td:first-child {
+text-align: left;
+}
+
+#dab{
+	font-size: 25px;
+	margin: 10px;
+}
